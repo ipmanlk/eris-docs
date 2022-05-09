@@ -1,0 +1,41 @@
+{
+	"source": {
+		"include": ["lib", "package.json", "README.md"],
+		"includePattern": ".js$",
+		"excludePattern": "(node_modules/|docs)"
+	},
+
+	"plugins": ["plugins/markdown"],
+
+	"opts": {
+		"encoding": "utf8",
+		"readme": "./README.md",
+		"destination": "docs/",
+		"recurse": true,
+		"verbose": true,
+		"template": "../clean-jsdoc-theme",
+		"theme_opts": {
+			"title": "Eris",
+			"theme": "dark",
+			"menu": [
+				{
+					"title": "Discord Server",
+					"link": "https://discord.com/invite/eris",
+					"target": "_blank"
+				}
+			],
+			"sections": [
+				"Classes",
+				"Modules",
+				"Externals",
+				"Events",
+				"Namespaces",
+				"Mixins",
+				"Tutorials",
+				"Interfaces",
+				"Global",
+				"Menu"
+			]
+		}
+	}
+}
