@@ -443,6 +443,7 @@ function buildSearch() {
     const branches = [
         'dev',
         'everything',
+        'everything-v10',
         '0.16.x',
         '0.15.x',
         '0.14.x',
