@@ -85,10 +85,6 @@ function selectBranch() {
 }
 
 window.addEventListener('load', function () {
-    for (let option of document.querySelectorAll('#branches-list option')) {
-        if (window.location.href.indexOf(option.value) > -1) {
-            document.getElementById('branches-list').value = option.value;
-            break;
-        }
-    }
+    const branch = new URL(window.location).pathname.split("/")[1];
+    document.getElementById('branches-list').value = branch;
 });
