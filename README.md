@@ -1,6 +1,5 @@
+# Eris is dead and I no longer use it. Use Oceanic instead: [OceanicJS/Oceanic](https://github.com/OceanicJS/Oceanic)
 
-Eris Docs
-======================
 This repository contains a dirty shell script for generating Eris documentation.
 
 ### Live Version
